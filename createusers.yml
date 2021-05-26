@@ -1,0 +1,8 @@
+---
+- name: Create Users
+  hosts: all
+  become: yes
+  become_user: root
+
+  roles:
+    - createusers
